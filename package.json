@@ -1,0 +1,27 @@
+{
+  "name": "js-math-random-test",
+  "version": "1.0.0",
+  "description": "Test how random Javascript's Math.random() really is",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boguz/js-math-random-test.git"
+  },
+  "keywords": [
+    "javascript",
+    "math",
+    "random",
+    "test",
+    "experiment",
+    "js"
+  ],
+  "author": "Luis Pato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boguz/js-math-random-test/issues"
+  },
+  "homepage": "https://github.com/boguz/js-math-random-test#readme"
+}

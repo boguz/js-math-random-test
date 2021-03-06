@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math.random() test</title>
+
+    <link rel="stylesheet" type="text/css" href="css/math-random-test.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+
+    <script src="js/math-random-test.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container" state="new">
+
+            <h1 class="title">How random is <span class="code color-primary">Math.random()</span>?</h1>
+
+            <figure class="graph__container">
+                <p class="testing color-primary">Testing...</p>
+                <canvas id="graph" class="graph"></canvas>
+            </figure>
+
+            <small class="info">
+                The random function ran <span class="info__quantity">1.000.000</span> times in <span class="indo__duration">1.2</span>ms
+            </small>
+
+            <div class="buttons">
+                <button class="button" test-quantity="100">Test 100x</button>
+                <button class="button" test-quantity="10000">Test 10.000x</button>
+                <button class="button" test-quantity="1000000">Test 1.000.000x</button>
+                <button class="button" test-quantity="100000000">Test 100.000.000x</button>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
