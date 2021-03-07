@@ -24,7 +24,7 @@
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,6 +40,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: var(--color-bg);
+    padding: 1rem;
 }
 
 .code {
@@ -54,9 +55,18 @@
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 560px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 .graph__container {
-    margin-top: 3rem;
-    width: 40vw;
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -73,6 +83,12 @@
     flex-direction: column;
 }
 
+@media screen and (min-width: 960px) {
+    .graph__container {
+        width: 60%;
+    }
+}
+
 .chartjs-render-monitor {
     height: 100% !important;
     margin: 0 auto .5rem;
@@ -80,6 +96,20 @@
 
 .info {
     margin: 4rem 0;
+}
+
+@media screen and (max-width: 560px) {
+    .info {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
 }
 
 .button {
@@ -128,6 +158,12 @@
 
 .container[state="new"] .graph__container {
     display: none;
+}
+
+@media screen and (max-width: 560px) {
+    .container[state="new"] .buttons {
+        margin-top: 2rem;
+    }
 }
 
 /* STATE LOADING */

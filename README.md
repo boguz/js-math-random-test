@@ -7,7 +7,6 @@ I thought about this the other day, so i decided to make a small experiment to f
 
 ![Screenshot of the tests](mathRandomExample_small.jpg)
 
-
 ## 🧠 Some kind of conclusion
 Depending on sample size, i was actually surprised to how random the results were.
 
